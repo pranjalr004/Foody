@@ -477,9 +477,8 @@
           </div>
         </section>
 
-
         <!-- SCHEDULE -->
-         <section class="section schedule" aria-labelledby="schedule-label">
+        <section class="section schedule" aria-labelledby="schedule-label">
           <div class="container">
             <div class="schedule-content">
               <p class="section-subtitle" id="schedule-label">Working Hour</p>
@@ -493,28 +492,108 @@
                   <p class="h4 title">Monday-Friday</p>
 
                   <div class="separator"></div>
-                    <div class="time title">09am-6pm</div>
+                  <div class="time title">09am-6pm</div>
                 </li>
 
                 <li class="schedule-item">
                   <p class="h4 title">Saturday</p>
 
                   <div class="separator"></div>
-                    <div class="time title">08am-7pm</div>
+                  <div class="time title">08am-7pm</div>
                 </li>
 
                 <li class="schedule-item">
                   <p class="h4 title">Sunday</p>
 
                   <div class="separator"></div>
-                    <div class="time title">Closed</div>
+                  <div class="time title">Closed</div>
                 </li>
               </ul>
             </div>
-              <div class="schedule-banner has-bg-image" style="background-image: url('./assets/images/schedule-banner.jpg')">
-              </div>
+            <div
+              class="schedule-banner has-bg-image"
+              style="
+                background-image: url('./assets/images/schedule-banner.jpg');
+              "
+            ></div>
           </div>
-         </section>
+        </section>
+
+        <!-- RESERVATION -->
+
+        <section
+          class="section reservation"
+          aria-labelledby="reservation-label"
+        >
+          <div class="container">
+            <figure
+              class="reservation-banner img-holder"
+              style="--width: 630; --height: 730"
+            >
+              <img
+                src="./assets/images/reservation-banner.jpg"
+                alt="Reservation Banner"
+                width="630"
+                height="730"
+                loading="lazy"
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="reservation-content">
+              <p class="section-subtitle" id="reservation-label">
+                Booking a Table
+              </p>
+              <h2 class="h2 title section-title">Make A Reservation</h2>
+
+              <p class="section-text">
+                Sit amet consectetur adipiscing elitsue risus mauris adipiscing
+                phasellus aene ante orcirat
+              </p>
+
+              <form action="./index.html" method="get" class="booking-form">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Person"
+                    autocomplete="off"
+                    class="input-field"
+                  />
+                  <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="Reserved Date"
+                    placeholder="Reserved Date"
+                    autocomplete="off"
+                    class="input-field"
+                  />
+                  <ion-icon name="calendar-outline"></ion-icon>
+                </div>
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="Reservation Time"
+                    placeholder="Reservation Time"
+                    autocomplete="off"
+                    class="input-field"
+                  />
+                  <ion-icon name="time-outline"></ion-icon>
+                </div>
+
+
+                <button class="btn" type="submit">
+                  <span class="span">Book A Table</span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+              </form>
+            </div>
+
+            <img src="./assets/images/line-1.png" alt="shape" class="shape" width="630" height="506" loading="lazy">
+          </div>
+        </section>
       </article>
     </main>
 

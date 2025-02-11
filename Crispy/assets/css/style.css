@@ -204,6 +204,22 @@ body{
   object-fit: cover;
 }
 
+.section{padding-block: var(--section-spacing);}
+
+.text-center{text-align: center;}
+
+.section-subtitle{
+  color: var(--text-sinopia);
+  text-transform: uppercase;
+  font-weight: var(--weight-semiBold);
+  margin-block-end: 10px;
+}
+
+.grid-list{
+  display: grid;
+  gap: 30px;
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -337,9 +353,45 @@ body{
   #POPULAR
 \*-----------------------------------*/
 
+.popular{background-color: var(--bg-sinopia);}
 
+.popular :is(.section-subtitle,.title){color: var(--text-white);}
 
+.popular .section-title{margin-block-end: 50px;}
 
+.popular-card{
+  background-color: var(--bg-white);
+  padding: 30px 20px;
+  border-radius: var(--radius-12);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.popular-card .card-icon img{width: 30px;}
+
+.popular-card .card-title{
+  color: var(--text-rich-black-fogra-29);
+  transition: var(--transition-1);
+}
+
+.popular-card .card-btn{
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border-cultured);
+  border-radius: var(--radius-5);
+  margin-inline-start: auto;
+  transition: var(--transition-1);
+}
+
+.popular-card:is(:hover, :focus-within) .card-title {color: var(--text-sinopia);}
+
+.popular-card:is(:hover,:focus-within) .card-btn{
+  background-color: var(--bg-rich-black-fogra-29);
+  color: var(--text-white);
+}
 
 /*-----------------------------------*\
   #MENU
